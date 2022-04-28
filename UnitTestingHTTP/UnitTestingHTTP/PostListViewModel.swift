@@ -11,6 +11,12 @@ import SwiftUI
 class PostListViewModel: ObservableObject {
     @Published var posts = [Post]()
     
+    var httpClient: HttpClientProtocol!
+    
+    init(_ httpClient: HttpClientProtocol) {
+        self.httpClient = httpClient
+    }
+    
     func fetchPost() async throws {
         let urlString = Constants.baseUrl + Endpoint.posts
         
@@ -18,7 +24,7 @@ class PostListViewModel: ObservableObject {
             throw HttpError.badURL
         }
         
-        let postResponse: [Post] = try await HttpClient.shared.fetchData(url: url)
+        let postResponse: [Post] = try await httpClient.fetchData(url: url)
         
         DispatchQueue.main.async {
             self.posts = postResponse
