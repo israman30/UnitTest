@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(postViewModel.posts) { post in
+                ForEach(postViewModel.posts, id: \.id) { post in
                     Button {
                         print("selected")
                     } label: {

@@ -24,20 +24,20 @@ class AddUpdateViewModel: ObservableObject {
     
     init(currentPost: Post) {
         self.postTitle = currentPost.title
-        self.postID = currentPost.id
+//        self.postID = currentPost.id
     }
     
-    func addPost() async throws {
-        let urlString = Constants.baseUrl + Endpoint.posts
-        
-        guard let url = URL(string: urlString) else {
-            throw HttpError.badURL
-        }
-        
-        let post = Post(id: nil, title: postTitle)
-        
-        try await HttpClient.shared.sendPost(to: url, object: post, httpMethod: HttpMethods.POST.rawValue)
-    }
+//    func addPost() async throws {
+//        let urlString = Constants.baseUrl + Endpoint.posts
+//
+//        guard let url = URL(string: urlString) else {
+//            throw HttpError.badURL
+//        }
+//
+//        let post = Post(id: 0, title: postTitle, body: "")
+//
+//        try await HttpClient.shared.sendPost(to: url, object: post, httpMethod: HttpMethods.POST.rawValue)
+//    }
     
     func addUpdateAction(completion: @escaping () -> Void) {
         Task {
@@ -45,7 +45,7 @@ class AddUpdateViewModel: ObservableObject {
                 if isUpdating {
                     // updateSong()
                 } else {
-                    try await addPost()
+//                    try await addPost()
                 }
             } catch {
                 print("❌ Error: \(error)")
