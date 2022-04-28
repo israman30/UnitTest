@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var postViewModel = PostListViewModel()
+    @StateObject var postViewModel = PostListViewModel(HttpClient())
     @State var modal: ModalType? = nil
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(postViewModel.posts, id: \.id) { post in
+                ForEach(postViewModel.posts) { post in
                     Button {
                         print("selected")
                     } label: {
@@ -33,22 +33,6 @@ struct ContentView: View {
                     Label("Add Song", systemImage: "plus.circle")
                 }
             }
-            .sheet(item: $modal, onDismiss: {
-                Task {
-                    do {
-                        try await postViewModel.fetchPost()
-                    } catch {
-                        print("❌ Error: \(error)")
-                    }
-                }
-            }, content: { modal in
-                switch modal {
-                case .add:
-                    AddUpdatePost(viewModel: AddUpdateViewModel())
-                case .update(let post):
-                    AddUpdatePost(viewModel: AddUpdateViewModel(currentPost: post))
-                }
-            })
             .onAppear {
                 Task {
                     do {
