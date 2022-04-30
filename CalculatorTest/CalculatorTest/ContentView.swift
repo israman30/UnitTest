@@ -12,6 +12,8 @@ class Calculations: ObservableObject {
     @Published var counter = 0
     @Published var input = ""
     
+    var isEmpty = false
+    
     func increasing() {
         guard counter < 10 else { return }
         counter += 1
@@ -24,6 +26,14 @@ class Calculations: ObservableObject {
     
     func adding() -> Int {
         (Int(input) ?? 0) + 2
+    }
+    
+    func addition(x: Int, y: Int) -> Int {
+        return x + y
+    }
+    
+    func subtraction(x: Int, y: Int) -> Int {
+        return x - y
     }
 }
 

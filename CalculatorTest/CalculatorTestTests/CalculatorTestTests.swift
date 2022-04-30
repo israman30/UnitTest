@@ -32,6 +32,21 @@ class CalculatorTestTests: XCTestCase {
         let newCount = 0
         XCTAssertEqual(increase, newCount)
     }
+    
+    func testAddtionResult() {
+        let add = sut?.addition(x: 2, y: 2)
+        XCTAssertEqual(add, 4)
+    }
+    
+    func testSubtraction() {
+        let subs = sut?.subtraction(x: 3, y: 2)
+        XCTAssertEqual(subs, 1)
+    }
+    
+    func testIsEmpty() {
+        guard let isEmpty = sut?.isEmpty else { return }
+        XCTAssertTrue(!isEmpty)
+    }
 
     func testExample() throws {
         // This is an example of a functional test case.
