@@ -14,11 +14,23 @@ class CalculatorTestTests: XCTestCase {
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = Calculations()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         sut = nil
+    }
+    
+    func testInialCounterNumber() {
+        let initialCount = sut?.counter
+        XCTAssertEqual(initialCount, 0)
+    }
+    
+    func testIncreaseCounter() {
+        let increase = sut?.counter
+        let newCount = 0
+        XCTAssertEqual(increase, newCount)
     }
 
     func testExample() throws {
