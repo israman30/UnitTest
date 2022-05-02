@@ -22,6 +22,17 @@ import XCTest
  3 -> tearDownWithError()
  */
 
+/**
+ Unit Test Requirement
+ Pattern:
+ 
+  func test<System Under Test>_<Condition or State Change>_<Expected Result>() {
+        TODO: BODY
+  }
+ EXAMPLE:
+  func testCounter_WhenUserIncreaseDecreaseNumber_NumberShouldNotExcedeEdgeCases() 
+ */
+
 class BasicsOfUnitTestTests: XCTestCase {
 
     override func setUpWithError() throws {
