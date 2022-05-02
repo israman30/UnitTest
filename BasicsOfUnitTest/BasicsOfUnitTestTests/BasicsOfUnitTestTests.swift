@@ -75,3 +75,16 @@ extension BasicsOfUnitTestTests {
         print("Naming convention test function")
     }
 }
+
+/**
+ AAA
+ Arrange - Act - Assert
+ 
+ EXAMPLE:
+    Arrange:
+        let name = "John Doe"
+    Act:
+        let username = sut.checkUsername()
+    Assert:
+        XCTAssertTrue(username, "Extepected TRUE for username or FALSE")
+ */
