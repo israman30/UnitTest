@@ -14,6 +14,7 @@
 		8D92F9F8281B79EA00F52802 /* CalculatorTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D92F9F7281B79EA00F52802 /* CalculatorTestTests.swift */; };
 		8D92FA02281B79EA00F52802 /* CalculatorTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D92FA01281B79EA00F52802 /* CalculatorTestUITests.swift */; };
 		8D92FA04281B79EA00F52802 /* CalculatorTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D92FA03281B79EA00F52802 /* CalculatorTestUITestsLaunchTests.swift */; };
+		8D92FA11281F651E00F52802 /* OrderOfTestRunning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D92FA10281F651E00F52802 /* OrderOfTestRunning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8D92F9FD281B79EA00F52802 /* CalculatorTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D92FA01281B79EA00F52802 /* CalculatorTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTestUITests.swift; sourceTree = "<group>"; };
 		8D92FA03281B79EA00F52802 /* CalculatorTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D92FA10281F651E00F52802 /* OrderOfTestRunning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOfTestRunning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				8D92F9F7281B79EA00F52802 /* CalculatorTestTests.swift */,
+				8D92FA10281F651E00F52802 /* OrderOfTestRunning.swift */,
 			);
 			path = CalculatorTestTests;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D92F9F8281B79EA00F52802 /* CalculatorTestTests.swift in Sources */,
+				8D92FA11281F651E00F52802 /* OrderOfTestRunning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
