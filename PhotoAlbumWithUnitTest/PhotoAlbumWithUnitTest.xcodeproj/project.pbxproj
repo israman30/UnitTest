@@ -13,7 +13,8 @@
 		8D92FA5C2820B3C500F52802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D92FA5A2820B3C500F52802 /* Main.storyboard */; };
 		8D92FA5E2820B3CB00F52802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D92FA5D2820B3CB00F52802 /* Assets.xcassets */; };
 		8D92FA612820B3CB00F52802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D92FA5F2820B3CB00F52802 /* LaunchScreen.storyboard */; };
-		8D9596002820B6150084E5BC /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9595FF2820B6150084E5BC /* SignUpFormModelValidator.swift */; };
+		8D9596002820B6150084E5BC /* SignUpFormModelValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9595FF2820B6150084E5BC /* SignUpFormModelValidatorTest.swift */; };
+		8D9596022820B72F0084E5BC /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,8 @@
 		8D92FA602820B3CB00F52802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D92FA622820B3CB00F52802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D92FA6C2820B47F00F52802 /* PhotoAlbumWithUnitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumWithUnitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D9595FF2820B6150084E5BC /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
+		8D9595FF2820B6150084E5BC /* SignUpFormModelValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTest.swift; sourceTree = "<group>"; };
+		8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				8D92FA542820B3C500F52802 /* AppDelegate.swift */,
 				8D92FA562820B3C500F52802 /* SceneDelegate.swift */,
 				8D92FA582820B3C500F52802 /* ViewController.swift */,
+				8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */,
 				8D92FA5A2820B3C500F52802 /* Main.storyboard */,
 				8D92FA5D2820B3CB00F52802 /* Assets.xcassets */,
 				8D92FA5F2820B3CB00F52802 /* LaunchScreen.storyboard */,
@@ -92,7 +95,7 @@
 		8D92FA6D2820B48000F52802 /* PhotoAlbumWithUnitTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				8D9595FF2820B6150084E5BC /* SignUpFormModelValidator.swift */,
+				8D9595FF2820B6150084E5BC /* SignUpFormModelValidatorTest.swift */,
 			);
 			path = PhotoAlbumWithUnitTestTests;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				8D92FA592820B3C500F52802 /* ViewController.swift in Sources */,
 				8D92FA552820B3C500F52802 /* AppDelegate.swift in Sources */,
+				8D9596022820B72F0084E5BC /* SignUpFormModelValidator.swift in Sources */,
 				8D92FA572820B3C500F52802 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D9596002820B6150084E5BC /* SignUpFormModelValidator.swift in Sources */,
+				8D9596002820B6150084E5BC /* SignUpFormModelValidatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
