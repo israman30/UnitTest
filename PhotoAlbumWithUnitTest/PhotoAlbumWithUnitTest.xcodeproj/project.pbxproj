@@ -15,6 +15,7 @@
 		8D92FA612820B3CB00F52802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D92FA5F2820B3CB00F52802 /* LaunchScreen.storyboard */; };
 		8D9596002820B6150084E5BC /* SignUpFormModelValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9595FF2820B6150084E5BC /* SignUpFormModelValidatorTest.swift */; };
 		8D9596022820B72F0084E5BC /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */; };
+		8D9596042820BC640084E5BC /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9596032820BC640084E5BC /* SignupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		8D92FA6C2820B47F00F52802 /* PhotoAlbumWithUnitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumWithUnitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9595FF2820B6150084E5BC /* SignUpFormModelValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTest.swift; sourceTree = "<group>"; };
 		8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
+		8D9596032820BC640084E5BC /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				8D92FA562820B3C500F52802 /* SceneDelegate.swift */,
 				8D92FA582820B3C500F52802 /* ViewController.swift */,
 				8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */,
+				8D9596032820BC640084E5BC /* SignupConstants.swift */,
 				8D92FA5A2820B3C500F52802 /* Main.storyboard */,
 				8D92FA5D2820B3CB00F52802 /* Assets.xcassets */,
 				8D92FA5F2820B3CB00F52802 /* LaunchScreen.storyboard */,
@@ -205,6 +208,7 @@
 				8D92FA592820B3C500F52802 /* ViewController.swift in Sources */,
 				8D92FA552820B3C500F52802 /* AppDelegate.swift in Sources */,
 				8D9596022820B72F0084E5BC /* SignUpFormModelValidator.swift in Sources */,
+				8D9596042820BC640084E5BC /* SignupConstants.swift in Sources */,
 				8D92FA572820B3C500F52802 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
