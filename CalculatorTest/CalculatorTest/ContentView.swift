@@ -10,6 +10,9 @@ import SwiftUI
 class Calculations: ObservableObject {
     
     @Published var counter = 0
+    @Published var input = ""
+    
+    var isEmpty = false
     
     func increasing() {
         guard counter < 10 else { return }
@@ -20,14 +23,40 @@ class Calculations: ObservableObject {
         guard counter > 0 else { return }
         counter -= 1
     }
+    
+    func adding() -> Int {
+        (Int(input) ?? 0) + 2
+    }
+    
+    func addition(x: Int, y: Int) -> Int {
+        return x + y
+    }
+    
+    func subtraction(x: Int, y: Int) -> Int {
+        return x - y
+    }
 }
 
 struct ContentView: View {
     
     @StateObject var cal = Calculations()
     
+    @State var number = 0
+    
     var body: some View {
         VStack {
+            VStack {
+                TextField("Enter something", text: $cal.input)
+                Text("Number: \(number)")
+                    .font(.title)
+                Button {
+                    number = cal.adding()
+                } label: {
+                    Text("Adding")
+                }
+
+            }
+            .padding()
             Text("Count: \(cal.counter)")
                 .font(.title)
             
@@ -55,5 +84,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
