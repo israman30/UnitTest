@@ -77,12 +77,12 @@ class SignUpFormModelValidatorTest: XCTestCase {
     
     func testSignUpFormModelValidator_WhenToPasswordIsToShortProvided_ShouldReturnFalse() {
         let isValidPassword = sut.isPasswordValid(password: "1")
-        XCTAssertFalse(isValidPassword, "Password should return FALSE if length is 2 otherwise TRUE")
+        XCTAssertFalse(isValidPassword, "Password should return FALSE if length is \(SignupConstants.passwordMinLength) otherwise TRUE")
     }
     
     func testSignUpFormModelValidator_WhenToPasswordIsToLongProvided_ShouldReturnFalse() {
         let isValidPassword = sut.isPasswordValid(password: "12345678901234568")
-        XCTAssertFalse(isValidPassword, "Password should return FALSE if length is 2 otherwise TRUE")
+        XCTAssertFalse(isValidPassword, "Password should return FALSE if length is \(SignupConstants.passwordMaxLength) otherwise TRUE")
     }
 
 }
