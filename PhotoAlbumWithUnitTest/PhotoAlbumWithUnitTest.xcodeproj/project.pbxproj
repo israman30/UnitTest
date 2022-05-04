@@ -19,6 +19,8 @@
 		8DB8E643282218B200F6581D /* SignupWebServicesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E642282218B200F6581D /* SignupWebServicesTest.swift */; };
 		8DB8E6452822192700F6581D /* SignupWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E6442822192700F6581D /* SignupWebServices.swift */; };
 		8DB8E64728221A3500F6581D /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */; };
+		8DB8E64928221D4900F6581D /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E64828221D4900F6581D /* SignupResponseModel.swift */; };
+		8DB8E64B28221D9F00F6581D /* SignupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E64A28221D9F00F6581D /* SignupError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8DB8E642282218B200F6581D /* SignupWebServicesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServicesTest.swift; sourceTree = "<group>"; };
 		8DB8E6442822192700F6581D /* SignupWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServices.swift; sourceTree = "<group>"; };
 		8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
+		8DB8E64828221D4900F6581D /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
+		8DB8E64A28221D9F00F6581D /* SignupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +92,9 @@
 		8D92FA532820B3C500F52802 /* PhotoAlbumWithUnitTest */ = {
 			isa = PBXGroup;
 			children = (
+				8DB8E64C28221DF600F6581D /* Signup */,
 				8D92FA542820B3C500F52802 /* AppDelegate.swift */,
 				8D92FA562820B3C500F52802 /* SceneDelegate.swift */,
-				8D92FA582820B3C500F52802 /* ViewController.swift */,
-				8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */,
-				8D9596032820BC640084E5BC /* SignupConstants.swift */,
-				8DB8E6442822192700F6581D /* SignupWebServices.swift */,
-				8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */,
 				8D92FA5A2820B3C500F52802 /* Main.storyboard */,
 				8D92FA5D2820B3CB00F52802 /* Assets.xcassets */,
 				8D92FA5F2820B3CB00F52802 /* LaunchScreen.storyboard */,
@@ -110,6 +110,44 @@
 				8DB8E642282218B200F6581D /* SignupWebServicesTest.swift */,
 			);
 			path = PhotoAlbumWithUnitTestTests;
+			sourceTree = "<group>";
+		};
+		8DB8E64C28221DF600F6581D /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				8DB8E64F28221EAB00F6581D /* Network */,
+				8DB8E64E28221E7300F6581D /* Controllers */,
+				8DB8E64D28221E1500F6581D /* Models */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		8DB8E64D28221E1500F6581D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D9596032820BC640084E5BC /* SignupConstants.swift */,
+				8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */,
+				8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */,
+				8DB8E64A28221D9F00F6581D /* SignupError.swift */,
+				8DB8E64828221D4900F6581D /* SignupResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DB8E64E28221E7300F6581D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D92FA582820B3C500F52802 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8DB8E64F28221EAB00F6581D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8DB8E6442822192700F6581D /* SignupWebServices.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +254,8 @@
 			files = (
 				8DB8E6452822192700F6581D /* SignupWebServices.swift in Sources */,
 				8D92FA592820B3C500F52802 /* ViewController.swift in Sources */,
+				8DB8E64B28221D9F00F6581D /* SignupError.swift in Sources */,
+				8DB8E64928221D4900F6581D /* SignupResponseModel.swift in Sources */,
 				8D92FA552820B3C500F52802 /* AppDelegate.swift in Sources */,
 				8D9596022820B72F0084E5BC /* SignUpFormModelValidator.swift in Sources */,
 				8DB8E64728221A3500F6581D /* SignupFormRequestModel.swift in Sources */,
