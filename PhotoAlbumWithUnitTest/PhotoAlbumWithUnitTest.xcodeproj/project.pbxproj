@@ -18,6 +18,7 @@
 		8D9596042820BC640084E5BC /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9596032820BC640084E5BC /* SignupConstants.swift */; };
 		8DB8E643282218B200F6581D /* SignupWebServicesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E642282218B200F6581D /* SignupWebServicesTest.swift */; };
 		8DB8E6452822192700F6581D /* SignupWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E6442822192700F6581D /* SignupWebServices.swift */; };
+		8DB8E64728221A3500F6581D /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		8D9596032820BC640084E5BC /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 		8DB8E642282218B200F6581D /* SignupWebServicesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServicesTest.swift; sourceTree = "<group>"; };
 		8DB8E6442822192700F6581D /* SignupWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServices.swift; sourceTree = "<group>"; };
+		8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				8D9596012820B72F0084E5BC /* SignUpFormModelValidator.swift */,
 				8D9596032820BC640084E5BC /* SignupConstants.swift */,
 				8DB8E6442822192700F6581D /* SignupWebServices.swift */,
+				8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */,
 				8D92FA5A2820B3C500F52802 /* Main.storyboard */,
 				8D92FA5D2820B3CB00F52802 /* Assets.xcassets */,
 				8D92FA5F2820B3CB00F52802 /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 				8D92FA592820B3C500F52802 /* ViewController.swift in Sources */,
 				8D92FA552820B3C500F52802 /* AppDelegate.swift in Sources */,
 				8D9596022820B72F0084E5BC /* SignUpFormModelValidator.swift in Sources */,
+				8DB8E64728221A3500F6581D /* SignupFormRequestModel.swift in Sources */,
 				8D9596042820BC640084E5BC /* SignupConstants.swift in Sources */,
 				8D92FA572820B3C500F52802 /* SceneDelegate.swift in Sources */,
 			);
