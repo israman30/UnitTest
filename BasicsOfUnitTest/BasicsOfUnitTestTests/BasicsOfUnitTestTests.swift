@@ -88,3 +88,27 @@ extension BasicsOfUnitTestTests {
     Assert:
         XCTAssertTrue(username, "Extepected TRUE for username or FALSE")
  */
+
+/**
+ ASSERTIONS
+ 
+ Boolean
+     XCTAssertionTrue(expressoin, "optional description")
+     XCTAssertionFalse(expressoin, "optional description")
+ Nil Test
+    XCTAssertNil(expression, "optional description")
+    XCTAssertNotNil(expression, "optional description")
+    XCTUnwrap()
+ Equality Test
+    XCTAssertEqual(expression1, expression2, "optional description")
+    XCTAssertNotEqual(expression1, expression2, "optional description")
+    XCTAssertGreaterThan(expression1, expression2, "optional description")
+    XCTAssertLessThan(expression1, expression2, "optional description")
+    XCTAssertLessThanOrEqual(expression1, expression2, "optional description")
+    XCTAssertEqualWithAccuracy(expression1, expression2, "optional description")
+ Unconditional Fail
+    XCTFail("Optional description")
+ Exception Test
+     XCTAssertThrowsError(expression, "optional description")
+     XCTAssertNotThrows(expression, "optional description")
+ */
