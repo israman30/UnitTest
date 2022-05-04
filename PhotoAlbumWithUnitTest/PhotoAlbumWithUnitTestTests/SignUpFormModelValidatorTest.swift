@@ -85,4 +85,13 @@ class SignUpFormModelValidatorTest: XCTestCase {
         XCTAssertFalse(isValidPassword, "Password should return FALSE if length is \(SignupConstants.passwordMaxLength) otherwise TRUE")
     }
 
+    func testSignUpFormModelValidator_WhenEqualPasswordProvided_ShouldReturnTrue() {
+        let doPasswordMatch = sut.doPasswordMatch(password: "123456", repeatPassword: "123456")
+        XCTAssertTrue(doPasswordMatch, "Should return TRUE otherwise FALSE")
+    }
+    
+    func testSignUpFormModelValidator_WhenNotEqualPasswordProvided_ShouldReturnFalse() {
+        let doPasswordMatch = sut.doPasswordMatch(password: "123456", repeatPassword: "123457")
+        XCTAssertFalse(doPasswordMatch, "Should return FALSE if doesn't match otherwise return TRUE")
+    }
 }
