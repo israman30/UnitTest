@@ -9,14 +9,16 @@ import Foundation
 
 class SignupWebServices {
     
-    private var usrString: String
+    private var urlSession: URLSession
+    private var uslString: String
     
-    init(urlString: String) {
-        self.usrString = urlString
+    init(urlString: String, urlSession: URLSession = .shared) {
+        self.uslString = urlString
+        self.urlSession = urlSession
     }
     
     func signup(withForm formModel: SignupFormRequestModel, completion: @escaping(SignupResponseModel?, SignupError?)->Void) {
-        guard let url = URL(string: usrString) else {
+        guard let url = URL(string: uslString) else {
             // TODO: Create UNIT TEST
             return
         }
@@ -26,8 +28,15 @@ class SignupWebServices {
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.httpBody = try? JSONEncoder().encode(formModel)
         
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+        let dataTask = urlSession.dataTask(with: request) { data, response, error in
+            // TODO: write new Unit Test to handle error
+            guard let data = data else { return }
             
+            if let signResponseModel = try? JSONDecoder().decode(SignupResponseModel.self, from: data) {
+                completion(signResponseModel, nil)
+            } else {
+                // TODO: another Unit Test to handle error
+            }
             
         }
         dataTask.resume()
