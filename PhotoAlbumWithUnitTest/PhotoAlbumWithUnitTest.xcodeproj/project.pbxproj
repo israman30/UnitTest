@@ -21,6 +21,7 @@
 		8DB8E64728221A3500F6581D /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */; };
 		8DB8E64928221D4900F6581D /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E64828221D4900F6581D /* SignupResponseModel.swift */; };
 		8DB8E64B28221D9F00F6581D /* SignupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E64A28221D9F00F6581D /* SignupError.swift */; };
+		8DB8E6512824B99900F6581D /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8E6502824B99900F6581D /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8DB8E64628221A3500F6581D /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
 		8DB8E64828221D4900F6581D /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
 		8DB8E64A28221D9F00F6581D /* SignupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupError.swift; sourceTree = "<group>"; };
+		8DB8E6502824B99900F6581D /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				8D9595FF2820B6150084E5BC /* SignUpFormModelValidatorTest.swift */,
 				8DB8E642282218B200F6581D /* SignupWebServicesTest.swift */,
+				8DB8E6502824B99900F6581D /* MockURLProtocol.swift */,
 			);
 			path = PhotoAlbumWithUnitTestTests;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB8E6512824B99900F6581D /* MockURLProtocol.swift in Sources */,
 				8DB8E643282218B200F6581D /* SignupWebServicesTest.swift in Sources */,
 				8D9596002820B6150084E5BC /* SignUpFormModelValidatorTest.swift in Sources */,
 			);
