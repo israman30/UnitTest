@@ -64,5 +64,16 @@ class SignupWebServicesTest: XCTestCase {
         
         wait(for: [expectation], timeout: 5.0)
     }
+    
+    func testSignupWebservices_WhenEmptyURLStringIsProvided_ReturnError() {
+        // Arrange
+        
+        sut = SignupWebServices(urlString: "")
+        // Act
+        sut?.signup(withForm: sigupFormRequestModel!, completion: { signupRequestModel, error in
+            XCTAssertEqual(error, SignupError.invalidRequestURLStringError)
+        })
+        // Assert
+    }
 
 }
