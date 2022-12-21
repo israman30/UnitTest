@@ -9,6 +9,14 @@ import XCTest
 @testable import Network_Request_Test
 
 final class Network_Request_TestTests: XCTestCase {
+    
+    override func setUp() {
+        
+    }
+    
+    override func tearDown() {
+        
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,6 +39,10 @@ final class Network_Request_TestTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func test_New_Sample_Test() {
+        
     }
 
 }
