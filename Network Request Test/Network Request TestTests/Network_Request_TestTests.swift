@@ -10,12 +10,14 @@ import XCTest
 
 final class Network_Request_TestTests: XCTestCase {
     
+    var sampleMath: SampleMath!
+    
     override func setUp() {
-        
+        sampleMath = SampleMath()
     }
     
     override func tearDown() {
-        
+        sampleMath = nil
     }
 
     override func setUpWithError() throws {
