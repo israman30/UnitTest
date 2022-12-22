@@ -32,6 +32,18 @@ final class Network_Request_TestTests: XCTestCase {
         XCTAssertEqual(result, 20, "The result is this test is correct")
     }
     
+    func test_theSquare_HasResult() {
+        // Given
+        var expected = 8
+        // When
+        expected = sampleMath.beSquare(number: 4)
+        // Then
+        XCTAssertEqual(expected, 16)
+        if expected != 16 {
+            XCTFail("Something wrong")
+        }
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
