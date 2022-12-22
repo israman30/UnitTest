@@ -15,6 +15,14 @@
 		4D5F713B2952B40400C753C2 /* Network_Request_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F713A2952B40400C753C2 /* Network_Request_TestUITests.swift */; };
 		4D5F713D2952B40400C753C2 /* Network_Request_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F713C2952B40400C753C2 /* Network_Request_TestUITestsLaunchTests.swift */; };
 		4D5F714A2952B7D200C753C2 /* SampleMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F71492952B7D200C753C2 /* SampleMath.swift */; };
+		4DC871EB295406CE0035B8B2 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871EA295406CE0035B8B2 /* Song.swift */; };
+		4DC871EE295406F70035B8B2 /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871ED295406F70035B8B2 /* SongListViewModel.swift */; };
+		4DC871F0295407150035B8B2 /* UpdateSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871EF295407150035B8B2 /* UpdateSongViewModel.swift */; };
+		4DC871F32954073F0035B8B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871F22954073F0035B8B2 /* Constants.swift */; };
+		4DC871F52954075B0035B8B2 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871F42954075B0035B8B2 /* HttpClient.swift */; };
+		4DC871F7295407770035B8B2 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871F6295407770035B8B2 /* ModalType.swift */; };
+		4DC871FA2954079C0035B8B2 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871F92954079C0035B8B2 /* SongList.swift */; };
+		4DC871FC295407BA0035B8B2 /* UpdateSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871FB295407BA0035B8B2 /* UpdateSong.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,14 @@
 		4D5F713A2952B40400C753C2 /* Network_Request_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_Request_TestUITests.swift; sourceTree = "<group>"; };
 		4D5F713C2952B40400C753C2 /* Network_Request_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_Request_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4D5F71492952B7D200C753C2 /* SampleMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMath.swift; sourceTree = "<group>"; };
+		4DC871EA295406CE0035B8B2 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		4DC871ED295406F70035B8B2 /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
+		4DC871EF295407150035B8B2 /* UpdateSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSongViewModel.swift; sourceTree = "<group>"; };
+		4DC871F22954073F0035B8B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4DC871F42954075B0035B8B2 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		4DC871F6295407770035B8B2 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		4DC871F92954079C0035B8B2 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
+		4DC871FB295407BA0035B8B2 /* UpdateSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSong.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,10 @@
 		4D5F711E2952B3F400C753C2 /* Network Request Test */ = {
 			isa = PBXGroup;
 			children = (
+				4DC871F82954078B0035B8B2 /* Views */,
+				4DC871F12954072D0035B8B2 /* Utils */,
+				4DC871EC295406E10035B8B2 /* ViewModels */,
+				4DC871E9295406B60035B8B2 /* Model */,
 				4D5F711F2952B3F400C753C2 /* Network_Request_TestApp.swift */,
 				4D5F71212952B3F400C753C2 /* ContentView.swift */,
 				4D5F71492952B7D200C753C2 /* SampleMath.swift */,
@@ -128,6 +148,42 @@
 				4D5F713C2952B40400C753C2 /* Network_Request_TestUITestsLaunchTests.swift */,
 			);
 			path = "Network Request TestUITests";
+			sourceTree = "<group>";
+		};
+		4DC871E9295406B60035B8B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DC871EA295406CE0035B8B2 /* Song.swift */,
+				4DC871EF295407150035B8B2 /* UpdateSongViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DC871EC295406E10035B8B2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4DC871ED295406F70035B8B2 /* SongListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4DC871F12954072D0035B8B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4DC871F22954073F0035B8B2 /* Constants.swift */,
+				4DC871F42954075B0035B8B2 /* HttpClient.swift */,
+				4DC871F6295407770035B8B2 /* ModalType.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4DC871F82954078B0035B8B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DC871F92954079C0035B8B2 /* SongList.swift */,
+				4DC871FB295407BA0035B8B2 /* UpdateSong.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +316,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC871FA2954079C0035B8B2 /* SongList.swift in Sources */,
+				4DC871F7295407770035B8B2 /* ModalType.swift in Sources */,
+				4DC871EB295406CE0035B8B2 /* Song.swift in Sources */,
 				4D5F714A2952B7D200C753C2 /* SampleMath.swift in Sources */,
+				4DC871F52954075B0035B8B2 /* HttpClient.swift in Sources */,
+				4DC871EE295406F70035B8B2 /* SongListViewModel.swift in Sources */,
 				4D5F71222952B3F400C753C2 /* ContentView.swift in Sources */,
+				4DC871FC295407BA0035B8B2 /* UpdateSong.swift in Sources */,
+				4DC871F32954073F0035B8B2 /* Constants.swift in Sources */,
+				4DC871F0295407150035B8B2 /* UpdateSongViewModel.swift in Sources */,
 				4D5F71202952B3F400C753C2 /* Network_Request_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
