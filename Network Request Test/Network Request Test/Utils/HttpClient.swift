@@ -24,9 +24,6 @@ enum HttpError: Error {
 }
 
 class HttpClient {
-    private init() { }
-    
-    static let shared = HttpClient()
     
     func fetch<T: Codable>(url: URL) async throws -> [T] {
         let (data, response) = try await URLSession.shared.data(from: url)
@@ -49,6 +46,17 @@ class HttpClient {
                          forHTTPHeaderField: HttpHeaders.contentType.rawValue)
         
         request.httpBody = try? JSONEncoder().encode(object)
+        
+        let (_, response) = try await URLSession.shared.data(for: request)
+        
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+            throw HttpError.badResponse
+        }
+    }
+    
+    func delete(at id: UUID, url: URL) async throws {
+        var request = URLRequest(url: url)
+        request.httpMethod = HttpMethods.DELETE.rawValue
         
         let (_, response) = try await URLSession.shared.data(for: request)
         
