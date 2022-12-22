@@ -31,6 +31,6 @@ struct AddUpdateSong: View {
 
 struct AddUpdateSong_Previews: PreviewProvider {
     static var previews: some View {
-        AddUpdateSong(viewModel: AddUpdateSongViewModel())
+        AddUpdateSong(viewModel: AddUpdateSongViewModel(httpClient: HttpClient()))
     }
 }
