@@ -27,6 +27,9 @@ final class Network_Request_TestTests: XCTestCase {
         result = sampleMath.add(number: 10)
         // Then
         XCTAssert(result == 20)
+        XCTAssertTrue(result == 20)
+        XCTAssertFalse(result != 20)
+        XCTAssertEqual(result, 20, "The result is this test is correct")
     }
     
     func testPerformanceExample() throws {
