@@ -23,6 +23,9 @@
 		4DC871F7295407770035B8B2 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871F6295407770035B8B2 /* ModalType.swift */; };
 		4DC871FA2954079C0035B8B2 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871F92954079C0035B8B2 /* SongList.swift */; };
 		4DC871FC295407BA0035B8B2 /* UpdateSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871FB295407BA0035B8B2 /* UpdateSong.swift */; };
+		4DC871FE29540F680035B8B2 /* MockHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871FD29540F680035B8B2 /* MockHttpClient.swift */; };
+		4DC87200295411260035B8B2 /* SongResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DC871FF295411260035B8B2 /* SongResponse.json */; };
+		4DC87202295411FE0035B8B2 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC87201295411FE0035B8B2 /* Mockable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		4DC871F6295407770035B8B2 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
 		4DC871F92954079C0035B8B2 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		4DC871FB295407BA0035B8B2 /* UpdateSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSong.swift; sourceTree = "<group>"; };
+		4DC871FD29540F680035B8B2 /* MockHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpClient.swift; sourceTree = "<group>"; };
+		4DC871FF295411260035B8B2 /* SongResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SongResponse.json; sourceTree = "<group>"; };
+		4DC87201295411FE0035B8B2 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				4D5F71302952B40400C753C2 /* Network_Request_TestTests.swift */,
+				4DC87201295411FE0035B8B2 /* Mockable.swift */,
+				4DC871FD29540F680035B8B2 /* MockHttpClient.swift */,
+				4DC871FF295411260035B8B2 /* SongResponse.json */,
 			);
 			path = "Network Request TestTests";
 			sourceTree = "<group>";
@@ -299,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC87200295411260035B8B2 /* SongResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC871FE29540F680035B8B2 /* MockHttpClient.swift in Sources */,
+				4DC87202295411FE0035B8B2 /* Mockable.swift in Sources */,
 				4D5F71312952B40400C753C2 /* Network_Request_TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,9 +11,9 @@ class SongListViewModel: ObservableObject {
     
     @Published var songs = [Song]()
     
-    var httpClient: HttpClient
+    var httpClient: HttpClientProtocol
     
-    init(httpClient: HttpClient) {
+    init(httpClient: HttpClientProtocol) {
         self.httpClient = httpClient
     }
     
