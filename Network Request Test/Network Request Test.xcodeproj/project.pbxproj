@@ -26,6 +26,7 @@
 		4DC871FE29540F680035B8B2 /* MockHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC871FD29540F680035B8B2 /* MockHttpClient.swift */; };
 		4DC87200295411260035B8B2 /* SongResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DC871FF295411260035B8B2 /* SongResponse.json */; };
 		4DC87202295411FE0035B8B2 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC87201295411FE0035B8B2 /* Mockable.swift */; };
+		4DC872042957F7C20035B8B2 /* SongListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC872032957F7C20035B8B2 /* SongListViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		4DC871FD29540F680035B8B2 /* MockHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpClient.swift; sourceTree = "<group>"; };
 		4DC871FF295411260035B8B2 /* SongResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SongResponse.json; sourceTree = "<group>"; };
 		4DC87201295411FE0035B8B2 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		4DC872032957F7C20035B8B2 /* SongListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				4D5F71302952B40400C753C2 /* Network_Request_TestTests.swift */,
+				4DC872032957F7C20035B8B2 /* SongListViewModelTest.swift */,
 				4DC87201295411FE0035B8B2 /* Mockable.swift */,
 				4DC871FD29540F680035B8B2 /* MockHttpClient.swift */,
 				4DC871FF295411260035B8B2 /* SongResponse.json */,
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC871FE29540F680035B8B2 /* MockHttpClient.swift in Sources */,
+				4DC872042957F7C20035B8B2 /* SongListViewModelTest.swift in Sources */,
 				4DC87202295411FE0035B8B2 /* Mockable.swift in Sources */,
 				4D5F71312952B40400C753C2 /* Network_Request_TestTests.swift in Sources */,
 			);
