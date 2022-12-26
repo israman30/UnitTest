@@ -14,9 +14,17 @@ final class SongListViewModelTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
+        songListViewModel = SongListViewModel(httpClient: MockHttpClient())
     }
     
     override func tearDown() {
         super.tearDown()
+        songListViewModel = nil
+    }
+    
+    func test_fecthSong_Successfully() async throws {
+        try await songListViewModel.fetchSongs()
+        
+        XCTAssertEqual(songListViewModel.songs.count, 2)
     }
 }
