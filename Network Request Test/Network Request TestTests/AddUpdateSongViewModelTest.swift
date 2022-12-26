@@ -31,5 +31,22 @@ final class AddUpdateSongViewModelTest: XCTestCase {
         sut.songTitle = " "
         XCTAssertFalse(sut.isValidSong(), "The song should not be valid")
     }
+    
+    func test_updateSong_NotNil() {
+        let isUpdating = sut.isUpdating
+        XCTAssertNotNil(isUpdating)
+    }
+    
+    func test_buttonTitle_SwitchTitle() {
+        let title = sut.buttonTitle
+        
+        XCTAssertNotNil(!title.isEmpty)
+        
+        if sut.songID != nil {
+            XCTAssertEqual(title, "Update Song")
+        } else if sut.songID == nil {
+            XCTAssertEqual(title, "Add Song")
+        }
+    }
 
 }
