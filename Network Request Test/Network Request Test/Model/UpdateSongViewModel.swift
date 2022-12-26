@@ -60,4 +60,8 @@ final class AddUpdateSongViewModel: ObservableObject {
             completion()
         }
     }
+    
+    func isValidSong() -> Bool {
+        songTitle.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? false : true
+    }
 }
