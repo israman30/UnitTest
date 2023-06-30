@@ -66,11 +66,13 @@ class ViewController: UIViewController, ViewModelProtocol {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupView()
-        fetchUsers()
+        vm.fetchUsers()
     }
     
     func updateView(imageUrl: String, email: String) {
-        
+        let imageData = try! NSData(contentsOf: URL(string: imageUrl)!) as Data
+        self.imagePhoto.image = UIImage(data: imageData)
+        self.titleLabel.text = email
     }
     
     func setupView() {
@@ -90,22 +92,6 @@ class ViewController: UIViewController, ViewModelProtocol {
         ])
     }
     
-    private func fetchUsers() {
-        NetworkManager.shared.getUser { user in
-            switch user {
-            case .success(let user):
-                self.titleLabel.text = user.email
-                DispatchQueue.main.async {
-                    let imageData = try! NSData(contentsOf: URL(string: user.avatar)!) as Data
-                    self.imagePhoto.image = UIImage(data: imageData)
-                }
-            case .failure(let error):
-                self.titleLabel.text = "\(error.localizedDescription)"
-                self.imagePhoto.image = UIImage(named: "placeholder")
-            }
-        }
-    }
-
 
 }
 struct UserResonse: Decodable {
