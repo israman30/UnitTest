@@ -79,6 +79,42 @@ final class Tips_and_TechniquesUITests: XCTestCase {
         let result = 0.1 + 0.2
         XCTAssertEqual(result, 0.3, accuracy: 0.0001)
     }
+    
+    // MARK: - Start from zero
+    func test_zero() {
+        XCTFail("Start test from zero")
+    }
+    
+    func test_methodOne() {
+        let sut = MyClass()
+        sut.methodOne()
+        
+        // Assert something
+    }
+}
+
+// MARK: - Some production object
+class MyClass {
+    private static var allInstances = 0
+    private let instance: Int
+    
+    init() {
+        MyClass.allInstances += 1
+        instance = MyClass.allInstances
+        print(">> MyClass.init() #\(instance)")
+    }
+    
+    deinit {
+        print(">> MyClass.deinit #\(instance)")
+    }
+    
+    func methodOne() {
+        print("-> Method One")
+    }
+    
+    func methodTwo() {
+        print("-> Method Two")
+    }
 }
 
 struct SimpleStruct: CustomStringConvertible {
