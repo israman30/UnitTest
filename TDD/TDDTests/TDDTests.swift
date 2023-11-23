@@ -10,14 +10,17 @@ import XCTest
 
 final class TDDTests: XCTestCase {
     
-    var sut: User!
+    private var sut: User!
+    private var network: Network!
 
     override func setUpWithError() throws {
         sut = User()
+        network = Network()
     }
 
     override func tearDownWithError() throws {
         sut = nil
+        network = nil
     }
     
     func testEmailAddressValidation() {
@@ -38,6 +41,14 @@ final class TDDTests: XCTestCase {
     func testUserEmptyNameOrLastNameFailed() {
         let name = sut.user(name: "John", last: "")
         XCTAssertEqual(name, "John ")
+    }
+    
+    func testUrlIsValid() {
+        XCTAssertEqual(network.url.rawValue, "www.google.com")
+    }
+    
+    func testFetchingData() {
+        let fetchData = network.fetchData()
     }
 
     func testExample() throws {

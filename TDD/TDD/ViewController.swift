@@ -30,3 +30,11 @@ class User {
         return "\(name) \(last)"
     }
 }
+
+enum Endpoing: String {
+    case api = "www.google.com"
+}
+
+class Network {
+    let url: Endpoing = .api
+}
