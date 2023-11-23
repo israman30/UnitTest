@@ -7,6 +7,15 @@
 
 import XCTest
 
+/// Choosing the right `Assertion`
+/// `XCTAssertEqual(_:_:)            -> Asserts that two values are equal
+/// `XCTAssertEqual(_:_:accuracy:)   -> Asserts that two floating-point values are equal within a certain accuracy
+/// `XCTAssertNil(_:)                -> Asserts that an optional value is nil
+/// `XCTAssertNotNil(_:)             -> Asserts that an optional value is not nil
+/// `XCTAssertTrue(_:)               -> Asserts that an expression is true
+/// `XCTAssertFalse(_:)              -> Asserts that an expression is false Fails the current test.
+/// `XCTFail() F                     -> Fail the current test, You should always provide a descriptive test
+
 final class Tips_and_TechniquesUITests: XCTestCase {
 
     override func setUpWithError() throws {
