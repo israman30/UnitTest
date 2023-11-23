@@ -38,4 +38,43 @@ final class Tips_and_TechniquesUITests: XCTestCase {
             }
         }
     }
+    
+    // MARK: - Optional Value
+    /// XCTAssertNil failed: "(1 2)"
+    func test_asserting_Nil() {
+        // This
+        let optionalValue: Int? = 123
+        XCTAssertNil(optionalValue)
+        
+        // Same as this
+        let objectOptionalValue = SimpleStruct(x: 1, y: 2)
+        XCTAssertNil(objectOptionalValue)
+    }
+    
+    // MARK: - Assert Equality
+    /// XCTAssertEqual failed: ("message") is not equal to ("actual")
+    func test_assertEqual() {
+        let message = "message"
+        XCTAssertEqual(message, "actual")
+    }
+    
+    // MARK: - Fudge Equality Double and Float
+    /// XCTAssertEqual failed: ("0.30000000000000004") is not equal to ("0.3")
+    func test_floatingPointDanger() {
+        let result = 0.1 + 0.2
+        XCTAssertEqual(result, 0.3)
+    }
+    
+    /// The accuracy parameter gives us a way to express the “more or less” fudge factor. Run this test and you’ll see that it passes.
+    func test_floatingPointFixed() {
+        let result = 0.1 + 0.2
+        XCTAssertEqual(result, 0.3, accuracy: 0.0001)
+    }
+}
+
+struct SimpleStruct: CustomStringConvertible {
+    let x: Int
+    let y: Int
+    
+    var description: String { "(\(x) \(y))" }
 }
