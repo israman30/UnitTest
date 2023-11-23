@@ -15,12 +15,12 @@ Assertion
 ## Keys Takeaways
 What are the key points from this chapter that you should apply to your
 coding?
-A test case is a function in a subclass of XCTestCase where the function has
+- A test case is a function in a subclass of XCTestCase where the function has
 the following traits:
-– Its name starts with test
-– It has no parameters, and no return value
-– It isn’t private
-- Press D-U (think U for “unit test”) to run tests.
+	- Its name starts with test
+	- It has no parameters, and no return value
+	- It isn’t private
+- Press ```D```-```U``` (think U for “unit test”) to run tests.
 - An assertion failure marks the test as failing. Otherwise, the test case
 passes.
 - Avoid conditional branches in test code to keep test code simple. You can
