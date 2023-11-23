@@ -31,3 +31,9 @@ then put an XCTFail() (with a description message) inside a conditional
 clause.
 - Check the failure reporting of your tests. If the description of an object is
 hard to read, provide a custom description by conforming to the CustomStringConvertible protocol.
+
+
+
+
+
+_source: iOS Unit Testing by Example by Jon Reid_
