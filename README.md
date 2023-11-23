@@ -20,7 +20,7 @@ the following traits:
 	- Its name starts with test
 	- It has no parameters, and no return value
 	- It isn’t private
-- Press ```D```-```U``` (think U for “unit test”) to run tests.
+- Press ```command```-```U``` (think U for “unit test”) to run tests.
 - An assertion failure marks the test as failing. Otherwise, the test case
 passes.
 - Avoid conditional branches in test code to keep test code simple. You can
