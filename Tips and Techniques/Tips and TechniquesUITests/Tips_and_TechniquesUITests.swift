@@ -85,11 +85,16 @@ final class Tips_and_TechniquesUITests: XCTestCase {
         XCTFail("Start test from zero")
     }
     
+    private let sut = MyClass()
+    
     func test_methodOne() {
-        let sut = MyClass()
         sut.methodOne()
         
         // Assert something
+    }
+    
+    func test_methodTwo() {
+        sut.methodTwo()
     }
 }
 
