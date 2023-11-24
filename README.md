@@ -38,9 +38,9 @@ hard to read, provide a custom description by conforming to the CustomStringConv
 - Finally enable *code coverage*
 
 ## Examine Code Coverage Results
-In the *show report navigation* you will see the ```Coverage``` in the tree hierarchy
-Once you select the file tested, it will show the percentage of code coverage
-Click on it to open the file and see that highlight the code covered on *green* and uncovered with *red*
+- In the *show report navigation* you will see the ```Coverage``` in the tree hierarchy
+- Once you select the file tested, it will show the percentage of code coverage
+- Click on it to open the file and see that highlight the code covered on *green* and uncovered with *red*
 
 
 _source: iOS Unit Testing by Example by Jon Reid_
