@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D7291452B10376000B1F374 /* TipsForClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7291442B10376000B1F374 /* TipsForClasses.swift */; };
+		4D7291472B1044FA00B1F374 /* SomeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7291462B1044FA00B1F374 /* SomeClass.swift */; };
 		4DBF0C912B0EE18A000D23B3 /* Tips_and_TechniquesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF0C902B0EE18A000D23B3 /* Tips_and_TechniquesApp.swift */; };
 		4DBF0C932B0EE18A000D23B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF0C922B0EE18A000D23B3 /* ContentView.swift */; };
 		4DBF0C952B0EE18B000D23B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBF0C942B0EE18B000D23B3 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D7291442B10376000B1F374 /* TipsForClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsForClasses.swift; sourceTree = "<group>"; };
+		4D7291462B1044FA00B1F374 /* SomeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeClass.swift; sourceTree = "<group>"; };
 		4DBF0C8D2B0EE18A000D23B3 /* Tips and Techniques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tips and Techniques.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBF0C902B0EE18A000D23B3 /* Tips_and_TechniquesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips_and_TechniquesApp.swift; sourceTree = "<group>"; };
 		4DBF0C922B0EE18A000D23B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			children = (
 				4DBF0C902B0EE18A000D23B3 /* Tips_and_TechniquesApp.swift */,
 				4DBF0C922B0EE18A000D23B3 /* ContentView.swift */,
+				4D7291462B1044FA00B1F374 /* SomeClass.swift */,
 				4DBF0C942B0EE18B000D23B3 /* Assets.xcassets */,
 				4DBF0C962B0EE18B000D23B3 /* Preview Content */,
 			);
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				4DBF0CA12B0EE18B000D23B3 /* Tips_and_TechniquesTests.swift */,
+				4D7291442B10376000B1F374 /* TipsForClasses.swift */,
 			);
 			path = "Tips and TechniquesTests";
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 			files = (
 				4DBF0C932B0EE18A000D23B3 /* ContentView.swift in Sources */,
 				4DBF0C912B0EE18A000D23B3 /* Tips_and_TechniquesApp.swift in Sources */,
+				4D7291472B1044FA00B1F374 /* SomeClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7291452B10376000B1F374 /* TipsForClasses.swift in Sources */,
 				4DBF0CA22B0EE18B000D23B3 /* Tips_and_TechniquesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

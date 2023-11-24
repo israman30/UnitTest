@@ -83,8 +83,6 @@ final class Tips_and_TechniquesTests: XCTestCase {
         XCTFail("Start test from zero")
     }
     
-    private let sut = MyClass()
-    
     func test_methodOne() {
         sut.methodOne()
         XCTFail("Failed")
@@ -97,33 +95,4 @@ final class Tips_and_TechniquesTests: XCTestCase {
 
 }
 
-// MARK: - Some production object
-class MyClass {
-    private static var allInstances = 0
-    private let instance: Int
-    
-    init() {
-        MyClass.allInstances += 1
-        instance = MyClass.allInstances
-        print(">> MyClass.init() #\(instance)")
-    }
-    
-    deinit {
-        print(">> MyClass.deinit #\(instance)")
-    }
-    
-    func methodOne() {
-        print("-> Method One")
-    }
-    
-    func methodTwo() {
-        print("-> Method Two")
-    }
-}
 
-struct SimpleStruct: CustomStringConvertible {
-    let x: Int
-    let y: Int
-    
-    var description: String { "(\(x) \(y))" }
-}

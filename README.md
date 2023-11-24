@@ -32,8 +32,15 @@ clause.
 - Check the failure reporting of your tests. If the description of an object is
 hard to read, provide a custom description by conforming to the CustomStringConvertible protocol.
 
+## Code Coverage Results
+- Enabling it do -> Product > Scheme > Edit Scheme
+- Select test on the sidebar then select options from the tab
+- Finally enable *code coverage*
 
-
+## Examine Code Coverage Results
+In the *show report navigation* you will see the ```Coverage``` in the tree hierarchy
+Once you select the file tested, it will show the percentage of code coverage
+Click on it to open the file and see that highlight the code covered on *green* and uncovered with *red*
 
 
 _source: iOS Unit Testing by Example by Jon Reid_
