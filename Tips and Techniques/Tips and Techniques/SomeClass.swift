@@ -47,4 +47,13 @@ class CoveredClass {
             return x
         }
     }
+    
+    static func commaSeparated(from: Int, to: Int) -> String {
+        var result = ""
+        for i in from..<to {
+            result += "\(i)"
+        }
+        result += "\(to)"
+        return result
+    }
 }

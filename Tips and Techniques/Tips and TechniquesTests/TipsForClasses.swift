@@ -24,6 +24,17 @@ final class TipsForClasses: XCTestCase {
     
     func test_maxWithOneAndTwo_ShouldReturnSomething() {
         let result = CoveredClass.max(1, 2)
+        XCTAssertEqual(result, 2)
+    }
+    
+    func test_maxWithThreeAndTwo_ShouldReturnThree() {
+        let result = CoveredClass.max(3, 2)
+        XCTAssertEqual(result, 3)
+    }
+    
+    func test_CommaSeparated_fromTwoAndFour_ShouldReturnSomething() {
+        let result = CoveredClass.commaSeparated(from: 2, to: 4)
+        XCTAssertEqual(result, "FOO")
     }
 
 }
