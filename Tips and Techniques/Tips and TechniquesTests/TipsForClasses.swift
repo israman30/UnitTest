@@ -36,6 +36,28 @@ final class TipsForClasses: XCTestCase {
         let result = CoveredClass.commaSeparated(from: 2, to: 4)
         XCTAssertEqual(result, "FOO")
     }
+    
+    func test_commaSeparated_fromTwoAndFour_shouldReturn234SeparatedByCommas() {
+        let result = CoveredClass.commaSeparated(from: 2, to: 4)
+        XCTAssertEqual(result, "2,3,4")
+    }
+    
+    func test_commaSeparated_fromTwoAndTwo_shouldReturnSomething() {
+        let result = CoveredClass.commaSeparated(from: 2, to: 2)
+        XCTAssertEqual(result, "FOO")
+    }
+    
+    func test_area_withWidthSeven_ShouldReturnSomething() {
+        let sut = CoveredClass()
+        sut.width = 7
+        XCTAssertEqual(sut.area, -1)
+    }
+    
+    func test_area_withWidthSeven_ShouldReturnSome49() {
+        let sut = CoveredClass()
+        sut.width = 7
+        XCTAssertEqual(sut.area, 49)
+    }
 
 }
 
