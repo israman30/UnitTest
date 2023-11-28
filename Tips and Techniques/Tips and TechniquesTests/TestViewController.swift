@@ -30,5 +30,20 @@ final class TestViewController: XCTestCase {
         let sut = CodeBaseViewController(data: "DUMMY DATA")
         // Assert Something
     }
+    
+    func test_OutletsConnections() {
+        let sut = OutletsViewController()
+        sut.loadViewIfNeeded()
+        XCTAssertNotNil(sut.label, "label")
+        XCTAssertNotNil(sut.button, "button")
+    }
+    
+    func test_buttonTapped_WithResult() {
+        let sut = OutletsViewController()
+        
+        sut.tapButton()
+        sut.button.sendActions(for: .touchUpInside)
+        sut.loadViewIfNeeded()
+    }
 
 }
