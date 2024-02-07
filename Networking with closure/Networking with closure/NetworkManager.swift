@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Constants {
+    static let endpoint = "https://api.example.com"
+}
+
 enum NetworkError: Error {
     case invalidURL
     case invalidResponse
@@ -16,7 +20,7 @@ enum NetworkError: Error {
 class NetworkManager {
     static let shared = NetworkManager()
     
-    private let baseURL = "https://api.example.com"
+    private let baseURL = Constants.endpoint
     
     private init() {}
     
