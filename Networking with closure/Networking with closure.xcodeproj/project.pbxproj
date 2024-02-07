@@ -15,6 +15,7 @@
 		4D7826F02B7315010034AC4D /* Networking_with_closureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7826EF2B7315010034AC4D /* Networking_with_closureUITests.swift */; };
 		4D7826F22B7315010034AC4D /* Networking_with_closureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7826F12B7315010034AC4D /* Networking_with_closureUITestsLaunchTests.swift */; };
 		4D7826FF2B73157E0034AC4D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7826FE2B73157E0034AC4D /* NetworkManager.swift */; };
+		4D7827012B7315DE0034AC4D /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7827002B7315DE0034AC4D /* NetworkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4D7826EF2B7315010034AC4D /* Networking_with_closureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking_with_closureUITests.swift; sourceTree = "<group>"; };
 		4D7826F12B7315010034AC4D /* Networking_with_closureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking_with_closureUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4D7826FE2B73157E0034AC4D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4D7827002B7315DE0034AC4D /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				4D7826D42B7314F70034AC4D /* Networking_with_closureApp.swift */,
 				4D7826D62B7314F70034AC4D /* ContentView.swift */,
+				4D7827002B7315DE0034AC4D /* NetworkViewModel.swift */,
 				4D7826FE2B73157E0034AC4D /* NetworkManager.swift */,
 				4D7826D82B7315010034AC4D /* Assets.xcassets */,
 				4D7826DA2B7315010034AC4D /* Preview Content */,
@@ -263,6 +266,7 @@
 				4D7826FF2B73157E0034AC4D /* NetworkManager.swift in Sources */,
 				4D7826D72B7314F70034AC4D /* ContentView.swift in Sources */,
 				4D7826D52B7314F70034AC4D /* Networking_with_closureApp.swift in Sources */,
+				4D7827012B7315DE0034AC4D /* NetworkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
