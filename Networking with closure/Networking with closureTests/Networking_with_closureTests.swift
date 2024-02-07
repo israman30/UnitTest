@@ -8,14 +8,40 @@
 import XCTest
 @testable import Networking_with_closure
 
+class MockNetworkManager: NetworkProtocol {
+    func fetchData(completion: @escaping (Result<Data, NetworkError>) -> Void) {
+        let mockData = "Mock API Response".data(using: .utf8)
+        completion(.success(mockData!))
+    }
+}
+
 final class Networking_with_closureTests: XCTestCase {
+    
+    var viewModel: DataViewModel!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewModel = DataViewModel(networkManager: MockNetworkManager())
+    }
+    
+    func test_fetchData() {
+        let expectation = XCTestExpectation(description: "Data fetched successfully")
+        
+        viewModel.fetchData { result in
+            switch result {
+            case .success(let data):
+                let responseString = String(data: data, encoding: .utf8)
+                XCTAssertEqual(responseString, "Mock API Response")
+                expectation.fulfill()
+            case .failure(let error):
+                XCTFail("API call failed with error: \(error)")
+            }
+        }
+        
+        wait(for: [expectation], timeout: 5.0)
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        viewModel = nil
     }
 
     func testExample() throws {

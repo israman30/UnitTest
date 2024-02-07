@@ -7,10 +7,14 @@
 
 import Foundation
 
-class DataViewModel {
-    private let networkManager: NetworkManager
+protocol NetworkProtocol {
+    func fetchData(completion: @escaping (Result<Data, NetworkError>) -> Void)
+}
+
+class DataViewModel: NetworkProtocol {
+    private let networkManager: NetworkProtocol
     
-    init(networkManager: NetworkManager = .shared) {
+    init(networkManager: NetworkProtocol) {
         self.networkManager = networkManager
     }
     

@@ -13,7 +13,7 @@ enum NetworkError: Error {
     case requestFailed(statusCode: Int)
 }
 
-final class NetworkManager {
+class NetworkManager {
     static let shared = NetworkManager()
     
     private let baseURL = "https://api.example.com"
