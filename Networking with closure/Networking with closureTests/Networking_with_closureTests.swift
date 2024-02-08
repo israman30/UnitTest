@@ -17,16 +17,16 @@ class MockNetworkManager: NetworkProtocol {
 
 final class Networking_with_closureTests: XCTestCase {
     
-    var viewModel: DataViewModel!
+    var sut: DataViewModel!
 
     override func setUpWithError() throws {
-        viewModel = DataViewModel(networkManager: MockNetworkManager())
+        sut = DataViewModel(networkManager: MockNetworkManager())
     }
     
     func test_fetchData() {
         let expectation = XCTestExpectation(description: "Data fetched successfully")
         
-        viewModel.fetchData { result in
+        sut.fetchData { result in
             switch result {
             case .success(let data):
                 let responseString = String(data: data, encoding: .utf8)
@@ -41,7 +41,7 @@ final class Networking_with_closureTests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        viewModel = nil
+        sut = nil
     }
 
     func testExample() throws {

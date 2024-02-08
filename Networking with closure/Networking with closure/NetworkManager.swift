@@ -31,7 +31,7 @@ class NetworkManager {
         }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
+            if error != nil {
                 completion(.failure(.requestFailed(statusCode: -1)))
                 return
             }
