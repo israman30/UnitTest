@@ -17,6 +17,12 @@ final class Clean_Unit_TestTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testContent_shouldReturnCorrectContent_whenPageIsValid() throws {
+        let catalog = Catalog(maxPages: 3, content: ["A", "B", "C"])
+        let result = try catalog.content(for: 1)
+        XCTAssertEqual(result, "B")
+    }
 
     func testExample() throws {
         // This is an example of a functional test case.
