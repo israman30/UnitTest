@@ -18,10 +18,35 @@ final class Clean_Unit_TestTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    // Success: The code works correctly with normal input data
     func testContent_shouldReturnCorrectContent_whenPageIsValid() throws {
         let catalog = Catalog(maxPages: 3, content: ["A", "B", "C"])
         let result = try catalog.content(for: 1)
         XCTAssertEqual(result, "B")
+    }
+    
+    // Failure: The code correctly throws an error when content is missing
+    func testContent_shouldThrow_whenContentIsMissing() {
+        let catalog = Catalog(maxPages: 4, content: ["A", "B", "C"])
+        XCTAssertThrowsError(try catalog.content(for: 3)) { error in
+            XCTAssertEqual(error as? CatalogError, .missingContent)
+        }
+    }
+    
+    // Bottom edge case: The code correctly throws an error with incorrect input data
+    func testContent_shouldThrow_whenPageIsNegative() {
+        let catalog = Catalog(maxPages: 3, content: ["A", "B", "C"])
+        XCTAssertThrowsError(try catalog.content(for: -1)) { error in
+            XCTAssertEqual(error as? CatalogError, .invalidPage)
+        }
+    }
+    
+    // Top edge case: The code correctly throws an error if we exceed the maximum allowed page number.
+    func testContent_shouldThrow_whenPageExceedsMax() {
+        let catalog = Catalog(maxPages: 3, content: ["A", "B", "C"])
+        XCTAssertThrowsError(try catalog.content(for: 3)) { error in
+            XCTAssertEqual(error as? CatalogError, .pageOutOfBounds)
+        }
     }
 
     func testExample() throws {
